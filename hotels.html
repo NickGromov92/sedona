@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Гостинницы</title>
+</head>
+<body>
+	<header>
+		<nav class="main-navigation">
+			<ul class="clearfix">
+				<li>
+					<a href="#">ИНФОРМАЦИЯ</a>
+				</li>
+				<li>
+					<a href="#">ФОТО И ВИДЕО</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="logo" src="img/logo.png" alt="Sedona">
+					</a>
+				</li>
+				<li>
+					<a href="#">КАРТА ШТАТА</a>
+				</li>
+				<li>
+					<a href="#">ГОСТИННИЦЫ</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="hotels-search">
+			<form action="post" class="search-form">
+				<div class="infrastructure">
+					<p>ИНФРАСТРУКТУРА:</p>
+					<input type="checkbox" name="pool" id="pool">
+					<label for="pool">БАССЕЙН</label>
+					<input type="checkbox" name="parking" id="parking">
+					<label for="parking">ПАРКОВКА</label>
+					<input type="checkbox" name="wi-fi" id="wi-fi">
+					<label for="wi-fi">WI-FI</label>
+				</div>
+				<div class="hotel-type">
+					<p>ТИП ЖИЛЬЯ:</p>
+					<input type="checkbox" name="hotel" id="hotel">
+					<label for="hotel">ГОСТИНИЦА</label>
+					<input type="checkbox" name="motel" id="motel">
+					<label for="motel">МОТЕЛЬ</label>
+					<input type="checkbox" name="apartmens" id="apartmens">
+					<label for="apartmens">АПАРТАМЕНТЫ</label>
+				</div>	
+				<div class="hotel-cost">
+					<p>СТОИМОСТЬ В СУТКИ (Р):</p>
+					<div class="range-text">
+						<input type="text" placeholder="ОТ 0">
+						<input type="text" placeholder="ДО 3000">
+					</div>
+					<div class="form-range"></div>
+					<div class="form-btn">
+						<a href="#">ПОКАЗАТЬ</a>
+					</div>	
+				</div>
+			</form>
+		</div>
+		<div class="search-results">
+			<div class="results-sort">
+				<div class="sort-text">
+					<p class="sort-results">НАЙДЕНО: 3</p>
+					<ul class="sort-variants">
+						<p>СОРТИРОВКА</p> <!-- span -->
+						<li>
+							<a href="#">ПО ЦЕНЕ</a>
+						</li>
+						<li>
+							<a href="#">ПО ТИПУ</a>
+						</li>
+						<li>
+							<a href="#">ПО РЕЙТИНГУ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sort-icons">
+					
+				</div>
+			</div>
+			<div class="results-hotels">
+				<div class="hotel-block">
+					<div class="hotel-content">
+						<div class="hotel-img">
+							<img src="" alt="">
+							<div class="hotel-information">
+								<h2>AMARA RESORT & SPA</h2>
+								<div class="hotel-more">
+									<p>ГОСТИННИЦА</p>
+									<button class="btn btn-more">ПОДРОБНЕЕ</button>
+								</div>
+								<div class="hotel-revers">
+									<p>ОТ 3500 Р.</p>
+									<button class="btn btn-revers">ЗАБРОНИРОВАТЬ</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hotel-rating"></div>
+				</div>
+				<div class="hotel-block">
+					<div class="hotel-content">
+						<div class="hotel-img">
+							<img src="" alt="">
+							<div class="hotel-information">
+								<h2>DESERT QUAIL INN</h2>
+								<div class="hotel-more">
+									<p>МОТЕЛЬ</p>
+									<button class="btn btn-more">ПОДРОБНЕЕ</button>
+								</div>
+								<div class="hotel-revers">
+									<p>ОТ 2000 Р.</p>
+									<button class="btn btn-revers">ЗАБРОНИРОВАТЬ</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hotel-rating">
+						
+					</div>
+				</div>
+				<div class="hotel-block">
+					<div class="hotel-content">
+						<div class="hotel-img">
+							<img src="" alt="">
+							<div class="hotel-information">
+								<h2>VILLAS AT POCO DIABLO</h2>
+								<div class="hotel-more">
+									<p>АПАРТАМЕНТЫ</p>
+									<button class="btn btn-more">ПОДРОБНЕЕ</button>
+								</div>
+								<div class="hotel-revers">
+									<p>ОТ 4300 Р.</p>
+									<button class="btn btn-revers">ЗАБРОНИРОВАТЬ</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hotel-rating">
+						
+					</div>
+				</div>
+			</div> <!-- results-hotels -->
+		</div> <!-- search-results -->
+	</main>
+
+	<footer class="footer-main">
+		<div class="footer-tape clearfix">
+			<div class="footer-hashtag">
+				<a href="#">#VISITSEDONA</a>
+			</div>
+			<div class="footer-social">
+				<a href="#" class="social-btn social-tw">TWITTER</a>
+				<a href="#" class="social-btn social-fb">FACEBOOK</a>
+				<a href="#" class="social-btn social-yt">YOUTUBE</a>
+			</div>
+			<div class="footer-copyright">
+				<p>WEBSITE BY</p>
+				<a href="#">
+					<img src="" alt="">
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
