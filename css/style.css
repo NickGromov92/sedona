@@ -7,37 +7,6 @@
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
-
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-
-  speak: none;
-}
-
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-star::before { content: "\2605"; } /* "★" */
-.icon-check-off::before { content: "\2610"; } /* "☐" */
-.icon-check-on::before { content: "\2611"; } /* "☑" */
-.icon-calendar::before { content: "\e800"; } /* "" */
-.icon-plus::before { content: "\e801"; } /* "" */
-.icon-minus::before { content: "\e802"; } /* "" */
-.icon-youtube::before { content: "\f39e"; } /* "" */
 /* Свойства, необходимые для работы иконочного шрифта. Конец */
 
 body {
@@ -53,19 +22,19 @@ body {
 	background: #f2f2f2;
 }
 
-.header-main,                              /* ТЕНЬ ВСЕЙ СТРАНИЦЫ */
+.header-main,/* ТЕНЬ ВСЕЙ СТРАНИЦЫ */
 main,
 .footer-main {
 	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.clearfix::after {                         /* Распорка */
+.clearfix::after {/* Распорка */
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.main-navigation ul {                       /* Шапка. Начало */
+.main-navigation ul {/* Шапка. Начало */
 	margin: 0;
 	padding: 0;
 	background: #fff;
@@ -96,7 +65,7 @@ main,
 	color: #766357;
 }
 
-.main-navigation .active:hover {           /* :hover and :active шапки. Начало */
+.main-navigation .active:hover {/* :hover and :active шапки. Начало */
 	color: #604e43;
 }
 
@@ -111,13 +80,13 @@ main,
 .main-navigation a:active {
 	color: #000;
 	opacity: .3;    
-}                                          /* :hover and :active шапки. Начало */
+}/* :hover and :active шапки. Конец */
 
 .logo {
 	position: absolute;
 	top: 0;
 	left: 51px;
-}                                            /* Шапка. Конец */
+}/* Шапка. Конец */
 
 .intro-img {
 	height: 508px;
@@ -182,7 +151,7 @@ main,
 	line-height: 26px;
 }
 
-.tape-title::after, /* Псевдоэлементы с номерами причин (— №$ —). Начало */
+.tape-title::after,/* Псевдоэлементы с номерами причин (— №$ —). Начало */
 .cause-block .cause-title::after {
 	display: block;
 	font-size: 14px;
@@ -209,7 +178,7 @@ main,
 
 .cause-block:nth-child(3) .cause-title::after {
 	content: "— №5 —";
-}                   /* Псевдоэлементы с номерами причин (— №$ —). Конец */
+}/* Псевдоэлементы с номерами причин (— №$ —). Конец */
 
 
 .causes,
@@ -228,7 +197,7 @@ main,
 	padding: 56px 0 81px 0;
 }
 
-.cause-block-img .cause-title::before { /* Псевдоэлементы с карртинками (спрайт). Начало */
+.cause-block-img .cause-title::before {/* Псевдоэлементы с карртинками (спрайт). Начало */
 	content: "";
 	display: block;
 	width: 79px;
@@ -248,7 +217,7 @@ main,
 
 .cause-block-img:nth-child(3) .cause-title::before {
 	background-position: 2px -284px;
-}                                        /* Псевдоэлементы с карртинками (спрайт). Конец */
+}/* Псевдоэлементы с карртинками (спрайт). Конец */
 
 .cause-block-img .cause-title {
 	margin-bottom: 24px;
@@ -260,6 +229,7 @@ main,
 
 .reserv {
 	padding-top: 51px;
+	position: relative;
 }
 
 .reserv-title {
@@ -286,15 +256,132 @@ main,
 	padding: 30px 140px;
 }
 
-.reserv-form {
-	display: none;
+.reserv-form {/* Всплывающая форма. Начало */
+	padding: 55px;
+	position: absolute;
+	top: 289px;
+	left: 50%;
+	margin-left: -285px;
+	background-color: #fff;
+	width: 458px;
+	line-height: 26px;
+	font-weight: bold;
+	z-index: 2;
+	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
+.reserv-form label {
+	vertical-align: text-top;
+}
+
+.reserv-form-block {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.reserv-form input {
+	border: none;
+	background-color: #f2f2f2;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 26px;
+	padding: 6px 38px 6px 12px;
+	float: right;
+	width: 295px;
+}
+
+.reserv-input-small {
+	width: 226px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 53px;
+}
+
+form .reserv-form-block:nth-child(4) {
+	float: right;
+	width: 178px;
+	margin-right: 0;
+}
+
+.reserv-input-small input {
+	width: 38px;
+	padding: 6px 38px;
+	text-align: center;
+}
+
+.search-btn {                               
+	width: 100%;
+	border: none;
+	background-color: #81b3d2;
+	font-size: 21px;
+	line-height: 26px;
+	color: #fff;
+	padding: 16px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.icon-btn::before {
+	font-size: 21px;
+	font-family: 'symbols-sedona';
+	position: absolute;
+	font-weight: normal;
+}
+
+.icon-calendar::before {
+	content: "\e800";
+	top: 6px;
+	right: 8px;
+	color: #c2c2c2;
+}
+
+.icon-minus::before {
+	font-size: 14px;
+	content: "\e802";
+	top: 6px;
+	right: 89px;
+	color: #a9a9a9;
+}
+
+.icon-plus::before {
+	font-size: 14px;
+	content: "\e801";
+	top: 6px;
+	right: 13px;
+	color: #a9a9a9;
+}
+
+.reserv-form input:hover {/* :hover, :focus and :active всплывающей формы. Начало */
+	background-color: #ebebeb;
+}
+
+.reserv-form input:focus {
+	background-color: #fff;
+	outline: 2px solid #e5e5e5;
+}
+
+.icon-btn:hover::before {
+	color: #000;
+}
+
+.icon-btn:active::before {
+	color: #81b3d2;
+}
+
+.search-btn:hover {
+	background-color: #669ec0;
+}
+
+.search-btn:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, .3);/* :hover, :focus and :active всплывающей формы. Конец */
+}/* Всплывающая форма. Конец */
 
 
 
 
-.hotels-search {                           /* Стили hotels.html Начало */
+
+.hotels-search {/* Стили hotels.html Начало */
 	background-image: url(../img/hotel-search.jpg);
 	background-position: 0 -55px;
 	background-repeat: no-repeat;
@@ -429,6 +516,7 @@ input:checked + label::before {
 }
 
 .hotels-form-btn button {
+	text-transform: uppercase;
 	text-decoration: none;
 	color: #fff;
 	border: 2px solid #fff;
@@ -437,7 +525,7 @@ input:checked + label::before {
 	border-radius: 2px;
 }
 
-input + label:hover::before {                 /* :hover and :disabled формы. Начало */
+input + label:hover::before {/* :hover and :disabled формы. Начало */
 	color: #fff;
 }
 
@@ -460,7 +548,7 @@ input:checked:disabled + label::before {
 .hotels-form-btn button:hover {
 	background-color: #fff;
 	color: #000;
-}                                           /* :hover and :disabled формы. Конец */
+}/* :hover and :disabled формы. Конец */
 
 .search-results {
 	background-color: #fefefe;
@@ -540,19 +628,34 @@ input:checked:disabled + label::before {
 	border: none;
 }
 
-.sort-icons a,
-.sort-icon-active {
+.sort-icon {
+	position: relative;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 6px;
+}
+
+.sort-icon::before {
 	text-decoration: none;
-	color: #81b3d2;
 	font-size: 23px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'symbols-sedona';
 }
 
-.sort-icons .sort-icon-active {
+.icon-up-dir::before {
 	color: #ccc;
-	margin-right: -10px;
+	content: "\25b2";
 }
 
-.sort-variants a:hover {       /* :hover and :active сортировки. Начало */
+.icon-down-dir::before {
+	color: #81b3d2;
+	content: "\25bc";
+}
+
+.sort-variants a:hover {/* :hover and :active сортировки. Начало */
 	color: #81b3d2;
 	border-bottom: 1px dotted rgba(0, 0, 0, .3);
 }
@@ -562,13 +665,13 @@ input:checked:disabled + label::before {
 	border: none;
 }
 
-.sort-icons a:hover {
+.icon-up-dir:hover::before {
 	color: #000;
 }
 
-.sort-icons a:active {
+.icon-up-dir:active::before {
 	color: #81b3d2;
-}                             /* :hover and :active сортировки. Конец */
+}/* :hover and :active сортировки. Конец */
 
 .hotel-img {
 	float: left;
@@ -609,7 +712,7 @@ input:checked:disabled + label::before {
 	background-color: #766357;
 }
 
-.hotel-title a:hover {                          /* :hover and :active элементов жилья. Начало */
+.hotel-title a:hover {/* :hover and :active элементов жилья. Начало */
 	color: #81b3d2;
 }
 
@@ -633,7 +736,7 @@ input:checked:disabled + label::before {
 .btn-revers:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, .3);	
-}                                               /* :hover and :active элементов жилья. Конец */
+}/* :hover and :active элементов жилья. Конец */
 
 .hotel-more span,
 .hotel-revers span {
@@ -641,15 +744,34 @@ input:checked:disabled + label::before {
 	margin-bottom: 14px;
 }
 
-.hotel-rating i {
+.rating-icons-container .icon-star {
+	display: inline-block;
+	height: 17px;
+	width: 17px;
+	position: relative;
+	margin-right: 3px;
+}
+
+.rating-icons-container .icon-star:last-child {
+	margin-right: 0;
+}
+
+.hotel-rating .icon-star::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'symbols-sedona';
+	font-weight: normal;
 	font-size: 19px;
 	color: #81b3d2;
-	margin-right: -6px;
+	content: "\2605";
+	font-style: normal;
 }
 
 .rating-icons-container {
+	text-align: right;
 	display: block;
-	margin-bottom: 43px;
+	margin-bottom: 44px;
 	padding-top: 2px;
 }
 
@@ -661,7 +783,7 @@ input:checked:disabled + label::before {
 }
 
 
-.footer-main {                               /* Подвал. Начало */
+.footer-main {/* Подвал. Начало */
 	position: relative;
 }
 
@@ -700,15 +822,40 @@ input:checked:disabled + label::before {
 
 .footer-social {
 	font-size: 0;
-	padding: 36px 0;
+	padding: 36px 0 30px 0;
 }
 
 .footer-social .social-btn {
+	position: relative;
 	margin-right: 6px;
-	font-size: 19px;
-	padding: 13px  10px 14px 10px;
+	padding: 24px 23px;
 	background-color: #81b3d2;
+}
+
+.footer-social .social-btn::after {
 	color: #fff;
+	font-size: 19px;
+	font-family: 'symbols-sedona';
+	position: absolute;
+	font-weight: normal;
+	text-transform: none;
+	font-weight: normal;
+	top: 13px;
+	left: 14px;
+}
+
+.footer-social .icon-twitter::after {
+	content: "\74";
+}
+
+.footer-social .icon-facebook::after {
+	left: 18px;
+	content: "\66";
+}
+
+.footer-social .icon-youtube::after {
+	font-size: 23px;
+	content: "\f39e";
 }
 
 .footer-copyright a {
@@ -719,13 +866,16 @@ input:checked:disabled + label::before {
 	background-position: 0 0;
 }
 
-.footer-social .social-btn:hover {            /* :hover and :active подвала. Начало */
+.footer-social .social-btn:hover {/* :hover and :active подвала. Начало */
 	background-color: #669ec0;
 }
 
 .footer-social .social-btn:active {
 	background-color: #5496bd;
-	color: rgba(255, 255, 255, .3);	
+}
+
+.footer-social .social-btn:active::after {
+	color: rgba(255, 255, 255, .3);
 }
 
 .footer-copyright a:hover {
@@ -733,16 +883,9 @@ input:checked:disabled + label::before {
 }
 
 .footer-copyright a:active {
-	background-position: 0 -88px;                /* :hover and :active подвала. Конец */
+	background-position: 0 -88px;/* :hover and :active подвала. Конец */
 }
 
 .footer-copyright {
 	padding: 41px 0;
 }
-
-.footer-copyright span {
-	vertical-align: middle;
-}                                              /* Подвал. Конец */
-
-
-
