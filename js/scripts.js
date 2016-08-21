@@ -23,3 +23,4 @@ smalldark.addEventListener("click", function(def) {
 	dark.classList.remove("dark-block-open");
 	smalldark.classList.remove("dark-block-open");
 })
+
