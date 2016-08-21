@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Гостинницы</title>
@@ -19,14 +19,14 @@
 				</li>
 				<li>
 					<a href="index.html">
-						<img class="logo" src="img/logo.png" alt="Sedona">
+						<img class="logo" src="img/logo.png" width="138" height="70" alt="Sedona">
 					</a>
 				</li>
 				<li>
 					<a href="#">Карта штата</a>
 				</li>
 				<li>
-					<a href="#" class="active">Гостиницы</a>
+					<span class="active">Гостиницы</span>
 				</li>
 			</ul>
 		</nav>
@@ -52,7 +52,7 @@
 					<label for="motel">Мотель</label>
 					<input type="checkbox" name="apartmens" id="apartmens">
 					<label for="apartmens">Апартаменты</label>
-				</div>	
+				</div>
 				<div class="hotels-cost">
 					<span class="hotels-form-title">Стоимость в сутки (Р):</span>
 					<div class="range-text">
@@ -66,8 +66,8 @@
 						<div class="toggle min-toggle"></div>
 						<div class="toggle max-toggle"></div>
 					</div>
-					<div class="hotels-form-btn">
-						<button>Показать</button>
+					<div class="hotels-form-btn-block">
+						<a href="#" class="hotels-form-btn">Показать</a>
 					</div>
 				</div>
 			</form>
@@ -76,8 +76,8 @@
 			<div class="results-sort clearfix">
 				<div class="sort-text">
 					<span class="sort-results-title">Найдено: 3</span>
+					<span class="sort-variants-title">Сортировка</span>
 					<ul class="sort-variants">
-						<span class="sort-variants-title">Сортировка</span>
 						<li>
 							<span class="sort-active">По цене</span>
 						</li>
@@ -135,7 +135,7 @@
 							</h2>
 							<div class="hotel-more">
 								<span>Мотель</span>
-								<a href="#" class="btn btn-more">Подробнее</a> 
+								<a href="#" class="btn btn-more">Подробнее</a>
 							</div>
 							<div class="hotel-revers">
 								<span>От 2000 Р.</span>
@@ -162,7 +162,7 @@
 							</h2>
 							<div class="hotel-more">
 								<span>Апартаменты</span>
-								<a href="#" class="btn btn-more">Подробнее</a> 
+								<a href="#" class="btn btn-more">Подробнее</a>
 							</div>
 							<div class="hotel-revers">
 								<span>От 4000 Р.</span>
@@ -189,13 +189,21 @@
 				<a href="#">#VisitSedona</a>
 			</div>
 			<div class="footer-social">
-				<a href="#" class="social-btn icon-twitter"></a>
-				<a href="#" class="social-btn icon-facebook"></a>
-				<a href="#" class="social-btn icon-youtube"></a>
+				<a href="#" class="social-btn icon-twitter">
+					<span class="hidden">Twitter</span>
+				</a>
+				<a href="#" class="social-btn icon-facebook">
+					<span class="hidden">Facebook</span>
+				</a>
+				<a href="#" class="social-btn icon-youtube">
+					<span class="hidden">Youtube</span>
+				</a>
 			</div>
 			<div class="footer-copyright">
 				<span>Website by</span>
-				<a href="#"></a>
+				<a href="#">
+					<span class="hidden">HTML Academy</span>
+				</a>
 			</div>
 		</div>
 	</footer>
